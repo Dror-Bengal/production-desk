@@ -6,7 +6,7 @@ Follow a video from the pitch to the final cut. Open a production to see the ide
 
 ## Run locally
 
-With Docker Compose installed and access to this private repository:
+With Docker Compose installed, run:
 
 ```sh
 git clone https://github.com/Dror-Bengal/production-desk.git
@@ -49,3 +49,7 @@ docker compose exec desk python -m unittest -v test_workflow
 ```
 
 The tests use temporary databases and a local response for the optional translation provider.
+
+## License
+
+Nayto’s code is distributed under the [MIT License](LICENSE). Third-party software and media retain their respective terms.
