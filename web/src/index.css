@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+/* Brand Colors:
+   Blue: #234350
+   Red: #aa3849
+   Orange: #286b69
+*/
+
+/* shadcn/ui CSS variables with brand colors */
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #234350;
+  --color-card: #ffffff;
+  --color-card-foreground: #234350;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #234350;
+  --color-primary: #234350;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #eef3f4;
+  --color-secondary-foreground: #234350;
+  --color-muted: #eef3f4;
+  --color-muted-foreground: #576d79;
+  --color-accent: #286b69;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #aa3849;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #d7e0e4;
+  --color-input: #d7e0e4;
+  --color-ring: #234350;
+  --radius: 0.5rem;
+
+  /* Custom brand colors */
+  --color-brand-blue: #234350;
+  --color-brand-red: #aa3849;
+  --color-brand-orange: #286b69;
+}
+
+/* Dark mode */
+.dark {
+  --color-background: #0c1929;
+  --color-foreground: #e8eef6;
+  --color-card: #132640;
+  --color-card-foreground: #e8eef6;
+  --color-popover: #132640;
+  --color-popover-foreground: #e8eef6;
+  --color-primary: #4a7fd4;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1e3a5f;
+  --color-secondary-foreground: #e8eef6;
+  --color-muted: #1e3a5f;
+  --color-muted-foreground: #8ba7cc;
+  --color-accent: #286b69;
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #aa3849;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #1e3a5f;
+  --color-input: #1e3a5f;
+  --color-ring: #4a7fd4;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

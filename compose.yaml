@@ -1,0 +1,13 @@
+services:
+  desk:
+    build: .
+    ports:
+      - "127.0.0.1:${DESK_PORT:-18788}:8000"
+    environment:
+      DESK_ROLE: "${DESK_ROLE:-reviewer}"
+      GEMINI_MODEL: "${GEMINI_MODEL:-}"
+      GEMINI_API_KEY: "${GEMINI_API_KEY:-}"
+    volumes:
+      - productions:/data
+volumes:
+  productions:
